@@ -39,6 +39,29 @@ The result is a repeatable, rigorous, and legible planning process that makes re
 
 ---
 
+# Installing the skill
+
+**Prerequisite:** skills require code execution to be enabled. On Free, Pro and Max plans that's Settings > Capabilities > Code execution and file creation. On Team and Enterprise, an owner enables it in Organisation settings > Skills.
+
+**claude.ai (web or desktop)**
+
+1. Download this repository — Code > Download ZIP — and unzip it
+2. Zip the *contents* of the folder, so that `SKILL.md` sits at the root of the archive alongside the `references/` folder
+3. In Claude, go to Customize > Skills and upload the zip
+4. Check the skill is toggled on
+
+Custom skills are per-user. They can't be shared organisation-wide from claude.ai.
+
+**Claude Code**
+
+Clone or copy this repository into your skills directory — `~/.claude/skills/` for personal use, or `.claude/skills/` inside a project. No zip needed.
+
+**Checking it works**
+
+Skills on claude.ai trigger automatically from the description; there is no slash command. Start a new conversation and describe a study in plain language — *"help me write a UT plan for our new onboarding flow, 6 participants over 2 weeks"*. The plan should come back in the section order below. If it stops at Success criteria with no threshold criteria or severity tagging, the `references/` folder hasn't been picked up — check it survived zipping as a folder.
+
+---
+
 # How to use the skill
 
 Describe the study in 1-2 sentences. Include relevant project context and your rough sense of what you want to learn or understand. 
